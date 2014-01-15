@@ -1,4 +1,0 @@
-load=[image]
-[splash/image1.jpg]
-[splash/image2.jpg]
-[splash/image3.jpg]
