@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GameTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GameTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/SFML-2.0/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-system-d" />
+					<Add directory="C:/SFML-2.0/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GameTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-static-libgcc -static-libstdc++" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/SFML-2.0/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-system-s" />
+					<Add directory="C:/SFML-2.0/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/Animation.h" />
+		<Unit filename="include/Collision.h" />
+		<Unit filename="include/FadeAnimation.h" />
+		<Unit filename="include/FileManager.h" />
+		<Unit filename="include/GameScreen.h" />
+		<Unit filename="include/GenericObj.h" />
+		<Unit filename="include/InputManager.h" />
+		<Unit filename="include/LevelScreen.h" />
+		<Unit filename="include/MainChar.h" />
+		<Unit filename="include/MenuManager.h" />
+		<Unit filename="include/ScreenManager.h" />
+		<Unit filename="include/SplashScreen.h" />
+		<Unit filename="include/TitleScreen.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Animation.cpp" />
+		<Unit filename="src/Collision.cpp" />
+		<Unit filename="src/FadeAnimation.cpp" />
+		<Unit filename="src/FileManager.cpp" />
+		<Unit filename="src/GameScreen.cpp" />
+		<Unit filename="src/GenericObj.cpp" />
+		<Unit filename="src/InputManager.cpp" />
+		<Unit filename="src/LevelScreen.cpp" />
+		<Unit filename="src/MainChar.cpp" />
+		<Unit filename="src/MenuManager.cpp" />
+		<Unit filename="src/ScreenManager.cpp" />
+		<Unit filename="src/SplashScreen.cpp" />
+		<Unit filename="src/TitleScreen.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
